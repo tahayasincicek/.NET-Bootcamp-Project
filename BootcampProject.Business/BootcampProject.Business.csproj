@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36B39E7A-EDDE-4D97-96C0-36E7D727A71F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BootcampProject.Business</RootNamespace>
+    <AssemblyName>BootcampProject.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstracts\AuthManager.cs" />
+    <Compile Include="Abstracts\IApplicationService.cs" />
+    <Compile Include="Abstracts\IAuthService.cs" />
+    <Compile Include="Abstracts\IBootcampService.cs" />
+    <Compile Include="BusinessRules\ApplicantBusinessRules.cs" />
+    <Compile Include="BusinessRules\ApplicationBusinessRules.cs" />
+    <Compile Include="BusinessRules\BlacklistBusinessRules.cs" />
+    <Compile Include="BusinessRules\BootcampBusinessRules.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Concrete\ApplicationManager.cs" />
+    <Compile Include="Concrete\BootcampManager.cs" />
+    <Compile Include="DTOs\Requests\CreateApplicationRequest.cs" />
+    <Compile Include="DTOs\Requests\CreateBootcampRequest.cs" />
+    <Compile Include="DTOs\Requests\LoginRequest.cs" />
+    <Compile Include="DTOs\Requests\RegisterRequest.cs" />
+    <Compile Include="DTOs\Requests\UpdateApplicationRequest.cs" />
+    <Compile Include="DTOs\Requests\UpdateBootcampRequest.cs" />
+    <Compile Include="DTOs\Responses\ApplicationResponse.cs" />
+    <Compile Include="DTOs\Responses\AuthResponse.cs" />
+    <Compile Include="DTOs\Responses\BootcampResponse.cs" />
+    <Compile Include="Mapping\ApplicationProfile.cs" />
+    <Compile Include="Mapping\BootcampProfile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BootcampProject.Core\BootcampProject.Core.csproj">
+      <Project>{66d9882f-9b71-46da-b38b-4c8c44f8585a}</Project>
+      <Name>BootcampProject.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BootcampProject.DataAccess\BootcampProject.DataAccess.csproj">
+      <Project>{eddf2a5c-742c-4585-82af-0a90aee17a00}</Project>
+      <Name>BootcampProject.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BootcampProject.Entities\BootcampProject.Entities.csproj">
+      <Project>{d3c897ff-3a82-405b-bd42-5eedcac7c103}</Project>
+      <Name>BootcampProject.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

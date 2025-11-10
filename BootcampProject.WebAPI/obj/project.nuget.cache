@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "wlNH3X+NuZAsgESzCJN0RzNfrW6OkNVUPVgxNhPjQ0i0kFwNgDiTeXBKT4JLqNp3gbgQtZ4h6lRsqT0N/0EYBQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\TAHA\\Desktop\\BootcampProject\\BootcampProject\\BootcampProject.WebAPI\\BootcampProject.WebAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TAHA\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\TAHA\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\TAHA\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\TAHA\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\TAHA\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\TAHA\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
